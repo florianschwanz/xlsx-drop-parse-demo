@@ -1,3 +1,15 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <div class="row">
+
+    <h3>Drop files</h3>
+
+    <div ng2FileDrop
+         [ngClass]="{'nv-file-over': hasBaseDropZoneOver}"
+         (fileOver)="fileOverBase($event)"
+         [uploader]="uploader"
+         (onFileDrop)="fileDropped($event)"
+         class="well my-drop-zone">
+    </div>
+  </div>
+
+</div>

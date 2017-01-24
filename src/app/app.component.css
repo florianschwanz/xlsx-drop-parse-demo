@@ -1,0 +1,17 @@
+.my-drop-zone {
+  width: 200px;
+  height: 100px;
+  margin: auto;
+}
+
+.my-drop-zone {
+  border: dashed 5px lightgray;
+}
+
+.nv-file-over {
+  border: dashed 5px deepskyblue;
+}
+
+html, body {
+  height: 100%;
+}

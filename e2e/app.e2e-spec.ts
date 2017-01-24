@@ -1,6 +1,6 @@
 import { FooDemoPage } from './app.po';
 
-describe('foo-demo App', function() {
+describe('xlsx-drop-parse-demo App', function() {
   let page: FooDemoPage;
 
   beforeEach(() => {
