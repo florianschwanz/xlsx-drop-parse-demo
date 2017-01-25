@@ -4,10 +4,12 @@ import {FormsModule} from "@angular/forms";
 import {HttpModule} from "@angular/http";
 import {AppComponent} from "./app.component";
 import {FileUploadModule} from "ng2-file-upload";
+import { XlsxFileUploadComponent } from './xlsx-file-upload/xlsx-file-upload.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    XlsxFileUploadComponent
   ],
   imports: [
     BrowserModule,
