@@ -1,4 +1,4 @@
-import { Output, EventEmitter, Component, OnDestroy, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Output, EventEmitter, Component, OnDestroy, OnInit } from '@angular/core';
 import {FileUploader} from "ng2-file-upload/ng2-file-upload";
 import {read, IWorkBook} from "ts-xlsx";
 import {IWorkSheet} from "xlsx";
@@ -14,7 +14,8 @@ export interface UploadResult {
 @Component({
   selector: 'xlsx-file-upload',
   templateUrl: './xlsx-file-upload.component.html',
-  styleUrls: ['./xlsx-file-upload.component.css']
+  styleUrls: ['./xlsx-file-upload.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class XlsxFileUploadComponent implements OnInit, OnDestroy {
   public uploader: FileUploader = new FileUploader({url: URL});

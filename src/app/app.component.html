@@ -3,7 +3,7 @@
 
     <h3>Drop files</h3>
 
-	<xlsx-file-upload (uploadedXls)="xlsxUploaded($event)"></xlsx-file-upload>
+	<xlsx-file-upload (uploadedXls)="xlsxUploaded($event)"> {{ uploaderContent | async }} </xlsx-file-upload>
   </div>
 
 </div>
